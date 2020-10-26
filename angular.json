@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular-portfolio": {
+    "Personal-Portfolio-Angular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-angular-portfolio",
+            "outputPath": "dist/Personal-Portfolio-Angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -62,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular-portfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angular-portfolio:build:production"
+              "browserTarget": "Personal-Portfolio-Angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angular-portfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           }
         },
         "test": {
@@ -88,7 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -110,15 +114,23 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-angular-portfolio:serve"
+            "devServerTarget": "Personal-Portfolio-Angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-angular-portfolio:serve:production"
+              "devServerTarget": "Personal-Portfolio-Angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "my-angular-portfolio"
+    }
+  },
+  "defaultProject": "Personal-Portfolio-Angular",
+  "cli": {
+    "analytics": "d5d9f68b-dce0-4de7-a15e-56e2bbd99b5e"
+  }
 }

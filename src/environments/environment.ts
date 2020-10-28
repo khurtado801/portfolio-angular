@@ -3,13 +3,12 @@ import { SnotifyPosition } from 'ng-snotify';
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-
 export const environment = {
-  production: false,
+  production: true,
   //baseUrl : `${window.location.protocol}//${window.location.hostname}/portfolio/`,
-  baseUrl : `http://localhost:4200/`,
+  baseUrl: `http://localhost:4200/`,
 
-  snotifyConfig : {
+  snotifyConfig: {
     showProgressBar: true,
     position: SnotifyPosition.rightTop,
   },

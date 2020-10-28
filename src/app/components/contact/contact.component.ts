@@ -26,7 +26,7 @@ import { environment } from '../../../environments/environment';
             { name: name, subject: subject, replyto: email, message: message },
             { 'headers': headers }).subscribe(
               response => {
-                console.log(response);
+                console.log('Response: ', response);
               }
             );
         }

@@ -4,8 +4,10 @@ import { SnotifyPosition } from 'ng-snotify';
 // The list of file replacements can be found in `angular.json`.
 
 
+
+
 export const environment = {
-  production: false,
+  production: true,
   //baseUrl : `${window.location.protocol}//${window.location.hostname}/portfolio/`,
   baseUrl : `http://localhost:4200/`,
 

@@ -39,8 +39,7 @@ const config: ExtraOptions = {
     HttpClientModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatButtonModule,
-    HttpClientModule
+    MatButtonModule
   ],
   entryComponents: [
     ConfirmationDialogComponent

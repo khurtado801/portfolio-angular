@@ -365,7 +365,7 @@ fieldset[disabled]
   transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   -webkit-box-shadow: none;
   box-shadow: none;
-  text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+  text-shadow: rgb(255, 255, 255) 0px 0px 2px;
 }
 
 .has-success .form-control {
@@ -1028,8 +1028,8 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.714em;
   line-height: 1.45em;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h4 + .category,
